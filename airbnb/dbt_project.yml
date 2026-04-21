@@ -37,3 +37,7 @@ models:
       +materialized: table
     src:
       +materialized: ephemeral  # will use CTE no table or view will be created
+
+data_tests:
+  +store_failures: true
+  +schema: _test_failures
